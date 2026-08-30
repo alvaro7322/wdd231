@@ -45,3 +45,26 @@ header span {
     content: "\00D7";
     font-size: 2 rem;
 }
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    color: cadetblue;
+    border-bottom: solid 1px #ddd;
+
+}

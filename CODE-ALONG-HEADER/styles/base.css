@@ -68,3 +68,51 @@ header span {
     border-bottom: solid 1px #ddd;
 
 }
+
+.navigation li.current{
+    background-color: beige;
+}
+
+.navigation a:hover {
+    background-color: gold;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+
+footer {
+    background-color: black;
+    padding: 1rem 10px;
+    text-align: center;
+
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+
+}
+
+.social a {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: dashed 1px white;
+    border-radius: 0.5rem;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: gold;
+
+}

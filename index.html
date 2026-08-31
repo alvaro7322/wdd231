@@ -5,20 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to Alvaro Garcia's developer portfolio. Discover my journey in web development, explore my skills, and check out the responsive projects and web applications I am actively building. Connect with me to learn more about my current work, creative coding projects, and technical skills.">
     <meta name="author" content="Alvaro Garcia">
-    <title>Document</title>
+    <title>Developer process</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
 </head>
 <body>
+    <header>
+        <img src="images/mando.svg" alt="logo" width="512" height="512">
+        <span>Alvaro Garcia</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
     <head>
         <nav id="nav-bar" class="navigation">
         <ul>
             <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Recent matches</a></li>
-            <li><a href="#">Next matches</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
         </ul>
     </nav>
     </head>
-    <main></main>
+    <main>
+        <h1>Home</h1>
+        <section class="card first-section">
+            <h2>About Me</h2>
+            <div class="contenido-reverse">
+                <p>
+                    I am a 22-year-old student from Peru with a deep passion for continuous learning and personal growth. When I am not focusing on programming or refining software projects, I divide my time between music, painting, and going to the gym. Additionally, I pursue a semi-professional career in Dota 2—a challenge I take on more as a personal goal and an athletic milestone than as a livelihood, pushing my strategic thinking and competitive drive to the limit.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>Student photo</h2>
+            <div>
+                <img src="images/profile.jpeg" alt="Profile picture">
+            </div>
+        </section>
+        <section class="courses-container">
+            <h2>Web Certificate Courses</h2>
+            
+            <div class="filters">
+                <button id="all-btn" class="filter-btn active">All</button>
+                <button id="cse-btn" class="filter-btn">CSE</button>
+                <button id="wdd-btn" class="filter-btn">WDD</button>
+            </div>
+
+            <div id="courses-list" class="courses-list">
+            </div>
+            <div id="total-credits" class="total-credits"></div>
+        </section>
+    </main>
     <footer>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer"><img src="images/twitter-x.svg" alt="X" width="16" height="16"></a>
+        </div>
+        
         <p>
             &copy; <span id="currentyear"></span> Alvaro Garcia, Peru
         </p>

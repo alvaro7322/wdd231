@@ -62,7 +62,7 @@ header span {
     display: block;
     padding: .8rem 10px;
     text-decoration: none;
-    color: cadetblue;
+    color: #1b4965;
     border-bottom: solid 1px #ddd;
 }
 
@@ -72,6 +72,7 @@ header span {
 
 .navigation a:hover {
     background-color: gold;
+    color: #000;
 }
 
 h1 {
@@ -120,16 +121,6 @@ main section {
 }
 
 .filters {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 8px;
-    border: solid 1px #ddd;
-    border-radius: 0.5rem;
-    padding: 8px;
-    background-color: beige;
-}
-
-.filters {
     display: flex;
     justify-content: space-between;
     gap: 8px;
@@ -137,6 +128,7 @@ main section {
     border: none;
     background: transparent;
     padding: 0;
+    margin-bottom: 10px;
 }
 
 .filters button {
@@ -151,7 +143,8 @@ main section {
     transition: background-color 0.2s;
 }
 
-.filters button:hover {
+.filters button:hover,
+.filters button.active:hover {
     background-color: gold;
     color: #000;
 }
@@ -159,11 +152,6 @@ main section {
 .filters button.active {
     background-color: #000;
     color: #fff;
-}
-
-.filters button.active:hover {
-    background-color: gold;
-    color: #000;
 }
 
 #courses-list {
@@ -223,4 +211,3 @@ footer {
 .social a:hover {
     background-color: gold;
 }
-

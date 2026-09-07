@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site planning document for the Moquegua Chamber of Commerce website project in WDD 231.">
+    <meta name="author" content="Alvaro Garcia">
+    <title>Chamber of Commerce - Site Plan</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/site-plan.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/mando.ico" type="image/x-icon">
+    <script src="scripts/site-plan.js" defer></script>
+</head>
+<body>
+    <header class="main-site-header">
+        <div class="header-brand">
+            <img src="images/mando.svg" alt="logo" width="35" height="35">
+            <span>Alvaro Garcia | WDD 231</span>
+        </div>
+    </header>
+
+    <main>
+        <h1>Moquegua Chamber of Commerce Site Plan</h1>
+        
+        <section>
+            <h2>Site Name & Purpose</h2>
+            <p><strong>Site Name:</strong> Moquegua Chamber of Commerce</p>
+            <p><strong>Purpose:</strong> This website will serve as a resource hub for businesses in the city of Moquegua. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping to promote local economic growth.</p>
+            <p><strong>Target Market:</strong> Business owners, patrons, and residents in the city of Moquegua and surrounding areas.</p>
+        </section>
+
+        <section>
+            <h2>Site Goals</h2>
+            <ul>
+                <li>Improve member engagement by providing valuable resources and networking opportunities.</li>
+                <li>Attract new businesses and encourage economic development in the community.</li>
+                <li>Improve the visibility and reputation of the chamber as a trusted authority in local business matters.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>User Personas & Scenarios</h2>
+            <article>
+                <h3>1. Small Business Owner</h3>
+                <p><strong>Persona:</strong> Maria is a 35-year-old entrepreneur who owns a small boutique shop in town. She is looking for networking opportunities, business resources, and marketing support to help grow her business.</p>
+                <p><strong>Scenario:</strong> Maria wants to join the chamber of commerce to network. She visits the website to find information on membership benefits, fees, and fills out the application form on the Join page.</p>
+            </article>
+
+            <article>
+                <h3>2. Corporate Executive</h3>
+                <p><strong>Persona:</strong> Diego is a 47-year-old executive at a large company looking for growth opportunities, local partnerships, and networking with other business leaders.</p>
+                <p><strong>Scenario:</strong> Diego visits the website to browse the Directory to identify potential corporate partners and check upcoming chamber events.</p>
+            </article>
+
+            <article>
+                <h3>3. The New Resident</h3>
+                <p><strong>Persona:</strong> Francisco recently moved into Moquegua and wants to learn more about services, local events, and community activities.</p>
+                <p><strong>Scenario:</strong> Francisco visits the Discover page to check local demographics, history, and community events, then searches the Directory for local service providers.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>SEO Plan</h2>
+            <ul>
+                <li>Use relevant keywords in site descriptions, content, and metadata for Moquegua business searches.</li>
+                <li>Verify the site on Google's Business Profile.</li>
+                <li>Get inbound links or backlinks from member business sites.</li>
+                <li>Embed Google Analytics across all site pages to track visitor behavior.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Design Schema</h2>
+            <p><strong>Primary Color:</strong> <span class="color-box c-primary"></span> #000000 (Black - Header & Footer)</p>
+            <p><strong>Secondary Color:</strong> <span class="color-box c-secondary"></span> #FFD700 (Gold - Accents & Hover State)</p>
+            <p><strong>Background Color:</strong> <span class="color-box c-bg"></span> #F5F5DC (Beige - Card Container Backgrounds)</p>
+            <p><strong>Link Color:</strong> <span class="color-box c-link"></span> #1B4965 (Deep Blue - Navigation & Hyperlinks)</p>
+            <p><strong>Typography:</strong> 'Poppins' (Headings) and 'Roboto' (Body text)</p>
+        </section>
+
+        <section>
+            <h2>Site Map</h2>
+            <div class="sitemap-tree">
+                <div class="sitemap-line"></div>
+                <div class="sitemap-nodes">
+                    <div class="sitemap-node">Home</div>
+                    <div class="sitemap-node">Discover</div>
+                    <div class="sitemap-node">Business Directory</div>
+                    <div class="sitemap-node">Join</div>
+                    <div class="sitemap-node">About</div>
+                    <div class="sitemap-node">Podcast</div>
+                    <div class="sitemap-node">Events</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Wireframes</h2>
+            
+            <h3>Desktop Layout (Directory Page)</h3>
+            <div class="wireframe-box">
+                <div class="wf-header">
+                    <div class="wf-logo-group">
+                        <img src="images/mando.svg" alt="chamber logo" class="wf-logo-img">
+                        <span>Moquegua Chamber of Commerce</span>
+                    </div>
+                    <nav class="wf-nav">
+                        <span>Home</span>
+                        <span class="wf-nav-active">Directory</span>
+                        <span>Join</span>
+                        <span>Discover</span>
+                        <span class="theme-toggle">◐</span>
+                    </nav>
+                </div>
+
+                <h2 class="wf-page-title left-align">Directory</h2>
+                <div class="wf-toggle">
+                    <span class="btn-active">Grid</span>
+                    <span class="btn-inactive">List</span>
+                </div>
+                
+                <div class="wf-grid-3x3">
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                </div>
+
+                <div class="wf-footer">
+                    <div class="wf-footer-col">
+                        <strong>Moquegua Chamber of Commerce</strong><br>
+                        Calle Lima 123<br>
+                        Moquegua, Peru 18001<br>
+                        info@moqueguacc.org<br>
+                        (053) 555-2300
+                    </div>
+                    <div class="social-icons">
+                        <img src="images/facebook.svg" alt="Facebook" class="social-icon-img">
+                        <img src="images/twitter-x.svg" alt="Twitter X" class="social-icon-img">
+                        <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon-img">
+                    </div>
+                    <div class="wf-footer-col text-right">
+                        WDD231 Class Project<br>
+                        Alvaro Garcia<br>
+                        &copy; 2026 Moquegua Chamber of Commerce<br>
+                        Last Modification: 10/21/2026 22:12:35
+                    </div>
+                </div>
+            </div>
+
+            <h3>Mobile Layout (Directory Page)</h3>
+            <div class="mobile-wf-container">
+                <div class="mobile-phone">
+                    <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+                    <div class="wf-header">
+                        <div class="wf-logo-group">
+                            <img src="images/mando.svg" alt="chamber logo" class="wf-logo-img">
+                            <span>Moquegua Chamber</span>
+                        </div>
+                        <div class="wf-mobile-nav-icons">
+                            <span>◐</span>
+                            <span>≡</span>
+                        </div>
+                    </div>
+                    <h2 class="wf-page-title left-align">Directory</h2>
+                    <div class="wf-toggle left-align">
+                        <span class="btn-active">Grid</span>
+                        <span class="btn-inactive">List</span>
+                    </div>
+
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                </div>
+
+                <div class="mobile-phone">
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                    <div class="wf-card"><div class="wf-card-header"><strong>Business Name</strong><p class="tagline">Business Tag Line</p></div><div class="wf-card-body"><div class="wf-img-placeholder"></div><div class="wf-card-info"><p><strong>EMAIL:</strong> info@gmail.com</p><p><strong>PHONE:</strong> 800-555-1234</p><p><strong>URL:</strong> mybusiness.com</p></div></div></div>
+                    
+                    <div class="wf-footer mobile-f">
+                        <div>
+                            <strong>Moquegua Chamber of Commerce</strong><br>
+                            Calle Lima 123<br>
+                            Moquegua, Peru 18001<br>
+                            info@moqueguacc.org<br>
+                            (053) 555-2300
+                        </div>
+                        <div class="social-icons">
+                            <img src="images/facebook.svg" alt="Facebook" class="social-icon-img">
+                            <img src="images/twitter-x.svg" alt="Twitter X" class="social-icon-img">
+                            <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon-img">
+                        </div>
+                        <div>
+                            WDD231 Class Project<br>
+                            Alvaro Garcia<br>
+                            &copy; 2026 Moquegua Chamber of Commerce<br>
+                            Last Modification: 10/21/2026 22:12:35
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Alvaro Garcia, Peru</p>
+        <p id="lastModified"></p>     
+    </footer>
+</body>
+</html>

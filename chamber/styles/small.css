@@ -42,10 +42,12 @@ header {
   height: 40px;
 }
 
-.header-container h1 {
+.site-title {
   font-family: var(--font-heading);
   font-size: 1.1rem;
+  font-weight: 700;
   margin: 0;
+  color: #ffffff;
 }
 
 #menu-toggle {
@@ -92,9 +94,11 @@ main {
   margin: 0 auto;
 }
 
-h2 {
+main h1 {
   font-family: var(--font-heading);
   color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-top: 0;
 }
 
 .view-controls {

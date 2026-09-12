@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Moquegua Tech Solutions",
+    "address": "Calle Lima 450, Moquegua",
+    "phone": "(053) 471-209",
+    "website": "https://example.com/tech",
+    "image": "images/shop.svg",
+    "membership": 3,
+    "tagline": "Innovación y soporte informático"
+  },
+  {
+    "name": "Panadería El Sol",
+    "address": "Av. Balta 123, Moquegua",
+    "phone": "(053) 462-110",
+    "website": "https://example.com/panaderia",
+    "image": "images/shop.svg",
+    "membership": 1,
+    "tagline": "Tradición e ingredientes locales"
+  },
+  {
+    "name": "Servicios Contables Moquegua",
+    "address": "Calle Ancash 310, Moquegua",
+    "phone": "(053) 463-552",
+    "website": "https://example.com/contabilidad",
+    "image": "images/shop.svg",
+    "membership": 2,
+    "tagline": "Asesoría financiera corporativa"
+  },
+  {
+    "name": "Bodega & Viñedos El Valle",
+    "address": "Fundo San Antonio s/n, Moquegua",
+    "phone": "(053) 461-889",
+    "website": "https://example.com/vinedo",
+    "image": "images/shop.svg",
+    "membership": 3,
+    "tagline": "Piscos y vinos de alta calidad"
+  },
+  {
+    "name": "Constructora del Sur",
+    "address": "Av. Interoceánica Km 2, Moquegua",
+    "phone": "(053) 478-900",
+    "website": "https://example.com/constructora",
+    "image": "images/shop.svg",
+    "membership": 2,
+    "tagline": "Infraestructura e ingeniería civil"
+  },
+  {
+    "name": "Imprenta y Gráfica Moquegua",
+    "address": "Calle Ayacucho 215, Moquegua",
+    "phone": "(053) 464-321",
+    "website": "https://example.com/imprenta",
+    "image": "images/shop.svg",
+    "membership": 1,
+    "tagline": "Publicidad y diseño gráfico"
+  },
+  {
+    "name": "Hotel & Convenciones Moquegua",
+    "address": "Calle Amazonas 501, Moquegua",
+    "phone": "(053) 475-678",
+    "website": "https://example.com/hotel",
+    "image": "images/shop.svg",
+    "membership": 3,
+    "tagline": "Hospedaje y salas de eventos"
+  }
+]

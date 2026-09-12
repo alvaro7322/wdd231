@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Directory - Moquegua Chamber of Commerce</title>
+  <meta name="description" content="Official business directory for the Moquegua Chamber of Commerce. Explore local businesses and networking opportunities.">
+  <meta name="author" content="Alvaro Garcia">
+
+  <link rel="icon" href="images/shop.ico" type="image/x-icon">
+
+  <meta property="og:title" content="Business Directory - Moquegua Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://alvarogarcia.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url" content="https://alvarogarcia.github.io/wdd231/chamber/directory.html">
+  <meta property="og:description" content="Connect with local businesses and corporate partners in Moquegua.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/nav.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/shop.svg" alt="Moquegua Chamber Logo" width="40" height="40">
+        <h1>Moquegua Chamber of Commerce</h1>
+      </div>
+      <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+      <nav>
+        <ul id="primary-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Business Directory</h2>
+    <div class="view-controls">
+      <button id="grid-btn" class="active">Grid View</button>
+      <button id="list-btn">List View</button>
+    </div>
+    <article id="members-container" class="grid-view"></article>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p><strong>Moquegua Chamber of Commerce</strong></p>
+      <p>Calle Lima 123, Moquegua, Peru 18001</p>
+      <p>info@moqueguacc.org</p>
+      <p>(053) 555-2300</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="images/facebook.svg" alt="Facebook Icon" width="30" height="30">
+      </a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn Icon" width="30" height="30">
+      </a>
+      <a href="https://github.com" target="_blank" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub Icon" width="30" height="30">
+      </a>
+    </div>
+
+    <div class="footer-dev">
+      <p>WDD231 Class Project | Alvaro Garcia</p>
+      <p>&copy; <span id="currentyear"></span> Moquegua Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

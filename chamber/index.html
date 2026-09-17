@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business Directory - Moquegua Chamber of Commerce</title>
-  <meta name="description" content="Official business directory for the Moquegua Chamber of Commerce. Explore local businesses and networking opportunities.">
+  <title>Home - Moquegua Chamber of Commerce</title>
+  <meta name="description" content="Official homepage for the Moquegua Chamber of Commerce. Discover local businesses, current events, weather, and how to join.">
   <meta name="author" content="Alvaro Garcia">
 
   <link rel="icon" href="images/shop.ico" type="image/x-icon">
 
-  <meta property="og:title" content="Business Directory - Moquegua Chamber of Commerce">
+  <meta property="og:title" content="Home - Moquegua Chamber of Commerce">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://alvaro7322.github.io/wdd231/chamber/images/hero.webp">
-  <meta property="og:url" content="https://alvaro7322.github.io/wdd231/chamber/directory.html">
+  <meta property="og:url" content="https://alvaro7322.github.io/wdd231/chamber/index.html">
   <meta property="og:description" content="Connect with local businesses and corporate partners in Moquegua.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-  <script type="module" src="scripts/app-directory.mjs"></script>
+  <script type="module" src="scripts/app.mjs"></script>
 </head>
 <body>
   <header>
@@ -37,9 +37,9 @@
       </div>
       <nav>
         <ul id="primary-nav">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
-          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
@@ -48,12 +48,43 @@
   </header>
 
   <main>
-    <h1>Moquegua Business Directory</h1>
-    <div class="view-controls">
-      <button id="grid-btn" class="active">Grid View</button>
-      <button id="list-btn">List View</button>
-    </div>
-    <article id="members-container" class="grid-view"></article>
+    <section class="hero">
+      <img src="images/moquegua.webp" alt="View of Moquegua city" class="hero-image">
+      <div class="hero-overlay">
+        <h1>Welcome to the Moquegua Chamber of Commerce</h1>
+        <p>Connecting local businesses and driving community growth</p>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
+    </section>
+
+    <section class="events-section">
+      <h2>Current Events</h2>
+      <ul class="events-list">
+        <li>
+          <h3>Feria Empresarial Moquegua 2026</h3>
+          <p>October 3, 2026 &mdash; Plaza de Armas de Moquegua</p>
+        </li>
+        <li>
+          <h3>Networking Breakfast</h3>
+          <p>October 10, 2026 &mdash; Hotel & Convenciones Moquegua</p>
+        </li>
+        <li>
+          <h3>Taller de Emprendimiento Digital</h3>
+          <p>October 17, 2026 &mdash; Cámara de Comercio, Sala Principal</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="weather-section">
+      <h2>Moquegua Weather</h2>
+      <div id="current-weather"></div>
+      <div id="forecast" class="forecast"></div>
+    </section>
+
+    <section class="spotlights-section">
+      <h2>Member Spotlights</h2>
+      <div id="spotlights-container" class="spotlights-container"></div>
+    </section>
   </main>
 
   <footer>

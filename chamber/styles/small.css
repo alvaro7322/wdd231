@@ -1,6 +1,6 @@
 :root {
   --primary-color: #000000;
-  --secondary-color: #FFD700;
+  --secondary-color: gold;
   --background-card: #F5F5DC;
   --link-color: #1B4965;
   --font-heading: 'Poppins', sans-serif;
@@ -21,41 +21,61 @@ body {
 header {
   background-color: var(--primary-color);
   color: #ffffff;
-  padding: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .header-container {
   display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 0.5rem;
+}
+
+.header-top {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.75rem;
 }
 
 .logo-title {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.6rem;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .logo-title img {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1);
 }
 
 .site-title {
   font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   margin: 0;
   color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #menu-toggle {
   background: none;
   border: none;
   color: #ffffff;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   cursor: pointer;
+  line-height: 1;
+  flex-shrink: 0;
+  padding: 0 0.25rem;
 }
 
 nav {
@@ -65,7 +85,7 @@ nav {
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 0 0;
+  margin: 0.75rem 0 0 0;
   display: none;
 }
 
@@ -76,13 +96,16 @@ nav ul.open {
 
 nav a {
   display: block;
-  padding: 0.75rem;
+  padding: 0.6rem 0.75rem;
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  white-space: nowrap;
 }
 
-nav a:hover, 
+nav a:hover,
 nav a.active {
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -110,6 +133,7 @@ main h1 {
 .view-controls button {
   padding: 0.5rem 1rem;
   border: 1px solid var(--primary-color);
+  border-radius: 4px;
   background: #ffffff;
   cursor: pointer;
   font-weight: bold;
@@ -135,7 +159,7 @@ main h1 {
 }
 
 .member-card img {
-  width: 80px;
+  width: 70px;
   height: auto;
   margin-bottom: 0.5rem;
 }
@@ -164,16 +188,199 @@ main h1 {
   color: var(--link-color);
 }
 
+.hero {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.25rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.55) 45%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  color: #ffffff;
+}
+
+.hero-overlay h1 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem 0;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero-overlay p {
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+.events-section,
+.weather-section,
+.spotlights-section {
+  margin: 2rem 0;
+}
+
+.events-section h2,
+.weather-section h2,
+.spotlights-section h2 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+}
+
+.events-list li {
+  background-color: var(--background-card);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.current-weather-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--background-card);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.current-weather-card img {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.current-temp {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+  line-height: 1;
+}
+
+.current-desc {
+  text-transform: capitalize;
+  color: #555555;
+  margin: 0.25rem 0 0 0;
+}
+
+.forecast {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  background-color: var(--background-card);
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+  flex: 1 1 80px;
+}
+
+.forecast-day {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--link-color);
+  margin: 0 0 0.5rem 0;
+}
+
+.forecast-card img {
+  width: 50px;
+  height: 50px;
+  margin: 0.25rem 0;
+}
+
+.forecast-temp {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0 0;
+  color: var(--primary-color);
+}
+
+.spotlights-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  background-color: var(--background-card);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.spotlight-card img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.membership-level {
+  font-weight: bold;
+  color: var(--link-color);
+}
+
 footer {
   background-color: var(--primary-color);
   color: #ffffff;
   padding: 1.5rem 1rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  border-top: 2px solid var(--secondary-color);
+  width: 100%;
+}
+
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 footer p {
@@ -188,8 +395,8 @@ footer p {
 }
 
 .footer-social img {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   filter: brightness(0) invert(1);
   transition: transform 0.2s ease;
 }

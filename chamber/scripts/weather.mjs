@@ -21,9 +21,13 @@ async function fetchForecast() {
 function renderCurrentWeather(data) {
   const currentWeatherEl = document.getElementById('current-weather');
   currentWeatherEl.innerHTML = `
-    <p class="current-temp">${Math.round(data.main.temp)}&deg;C</p>
-    <p class="current-desc">${data.weather[0].description}</p>
-    <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="${data.weather[0].description}" width="60" height="60">
+    <div class="current-weather-card">
+      <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="${data.weather[0].description}" width="70" height="70" loading="lazy" onerror="this.style.display='none'">
+      <div class="current-weather-info">
+        <p class="current-temp">${Math.round(data.main.temp)}&deg;C</p>
+        <p class="current-desc">${data.weather[0].description}</p>
+      </div>
+    </div>
   `;
 }
 
@@ -40,7 +44,7 @@ function renderForecast(data) {
     card.classList.add('forecast-card');
     card.innerHTML = `
       <p class="forecast-day">${dayName}</p>
-      <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}.png" alt="${day.weather[0].description}" width="50" height="50" onerror="this.style.display='none'">
+      <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}.png" alt="${day.weather[0].description}" width="50" height="50" loading="lazy" onerror="this.style.display='none'">
       <p class="forecast-temp">${Math.round(day.main.temp)}&deg;C</p>
     `;
     forecastEl.appendChild(card);

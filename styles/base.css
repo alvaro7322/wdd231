@@ -171,13 +171,86 @@ main section {
     font-weight: bold;
     color: #333;
     box-sizing: border-box;
-    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, transform 0.1s;
+}
+
+.course-card:hover {
+    transform: scale(1.02);
 }
 
 .course-card.completed {
     background-color: #d4edda;
     color: #155724;
     border: 1px solid #c3e6cb;
+}
+
+.total-credits {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #444;
+    width: 90%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-header {
+    background-color: #1b4965;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: white;
+}
+
+#close-modal {
+    background-color: #fff;
+    color: #b30000;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 4px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#close-modal:hover {
+    background-color: #f8d7da;
+}
+
+.modal-body {
+    padding: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.modal-body h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.modal-body p {
+    margin: 10px 0;
+    line-height: 1.4;
 }
 
 footer {

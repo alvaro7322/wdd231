@@ -92,4 +92,18 @@
     flex: 1 1 250px;
     text-align: right;
   }
+
+  .join-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .join-form {
+    flex: 2;
+  }
+
+  .membership-cards {
+    flex: 1;
+    grid-template-columns: 1fr;
+  }
 }

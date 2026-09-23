@@ -19,6 +19,7 @@
     <link rel="shortcut icon" href="images/mando.ico" type="image/x-icon">
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
     <header>
@@ -45,12 +46,14 @@
                 </p>
             </div>
         </section>
+
         <section>
             <h2>Student photo</h2>
             <div>
                 <img src="images/profile.jpeg" alt="Profile picture">
             </div>
         </section>
+
         <section class="courses-container">
             <h2>Web Certificate Courses</h2>
             
@@ -60,11 +63,13 @@
                 <button id="wdd-btn" class="filter-btn">WDD</button>
             </div>
 
-            <div id="courses-list" class="courses-list">
-            </div>
+            <div id="courses-list" class="courses-list"></div>
             <div id="total-credits" class="total-credits"></div>
         </section>
+
+        <dialog id="course-details"></dialog>
     </main>
+
     <footer>
         <div class="social">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>

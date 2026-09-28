@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site plan for a page about the origin of 322 and the circumstances that lead South American Dota 2 players to match-fixing.">
+    <meta name="author" content="Alvaro Garcia">
+    <title>Site Plan - 322 Archive: Origins and Context</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@1,600&family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+
+    <header>
+        <h1>Site Plan Document</h1>
+        <p>WDD231 Web Frontend Development Project</p>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Site Name:</strong> 322 Archive: Origins and Context</p>
+            <p><strong>Optional Domain Availability:</strong> 322archive.gg</p>
+            <p><strong>Description:</strong> I kept the name "322 Archive" because it combines "322"—the most famous numeric meme and competitive scandal in Dota 2 history—with "Archive", which signals that the site is an educational repository. "Origins and Context" was added because this version explains not only what happened, but why match-fixing kept appearing in the South American scene.</p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The site explains where the term "322" comes from and how match-fixing became a recurring problem in the South American Dota 2 community. It combines the original 2013 incident, case studies of banned South American teams like <em>Elite Wolves</em>, and an analysis of the circumstances that push players toward these decisions, such as low salaries, unstable contracts, unregulated betting, and financial pressure.</p>
+        </section>
+
+        <section id="site-pages">
+            <h2>Site Pages</h2>
+            <ul>
+                <li><strong>Home (index.html):</strong> origin of the term, South American context, and a preview of three main cases.</li>
+                <li><strong>Form page (form.html):</strong> lets visitors submit a testimony or suggest a case, followed by a confirmation page.</li>
+                <li><strong>Cases page (cases.html):</strong> a full catalog of match-fixing cases loaded from a JSON file, with the year, the sanction, and the circumstances behind each one, plus filters by year.</li>
+            </ul>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <ul>
+                <li>Why does the Dota 2 community and Twitch chat constantly use the term "322" whenever a player makes a mistake, and what is the original story behind that number?</li>
+                <li>What economic and institutional circumstances led South American players to accept match-fixing offers, and how did that situation differ from other regions?</li>
+                <li>Which South American teams and players were permanently banned by Valve for match-fixing, and how did those bans impact the growth of esports in the region?</li>
+            </ul>
+        </section>
+
+        <section id="color-schema">
+            <h2>Color Schema</h2>
+            <p>The site's color palette is directly inspired by the dark, dramatic aesthetic of Dota 2 and esports interfaces:</p>
+            <ul>
+                <li>
+                    <span class="color-box primary-bg-box"></span>
+                    <strong>Primary Background (#121212):</strong> A dark charcoal gray used for the main body background to give a gaming feel and reduce eye strain.
+                </li>
+                <li>
+                    <span class="color-box secondary-bg-box"></span>
+                    <strong>Secondary Container (#1e1e1e):</strong> A dark gray used for section cards, headers, and content blocks to create contrast and structure.
+                </li>
+                <li>
+                    <span class="color-box accent-red-box"></span>
+                    <strong>Accent Red (#af2b2b):</strong> Inspired by the iconic Dota 2 logo crimson red. Used for main headings (H1, H2), borders, and emphasis on bans/warnings.
+                </li>
+                <li>
+                    <span class="color-box accent-gold-box"></span>
+                    <strong>Accent Gold (#d4a359):</strong> Inspired by the Aegis gold color. Used for subheadings (H3), important dates, key terms, and links.
+                </li>
+                <li>
+                    <span class="color-box text-main-box"></span>
+                    <strong>Text Main (#e0e0e0):</strong> An off-white color used for all body text, paragraphs, and list items to ensure high legibility.
+                </li>
+            </ul>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>The site uses three distinct web fonts imported from Google Fonts to structure hierarchy and highlight quotes from the competitive scene:</p>
+            <ul>
+                <li>
+                    <strong>Heading Font — Montserrat (Bold / Extra-Bold 800):</strong> Used for main titles (H1, H2, H3). A strong, geometric sans-serif that delivers high visual impact suited for esports.
+                </li>
+                <li>
+                    <strong>Casual Text Font — Open Sans (Regular 400):</strong> Used for all standard body copy, paragraphs, scenario descriptions, and list items to guarantee clean legibility across devices.
+                </li>
+                <li>
+                    <strong>Quote Font — Cinzel (Italic 600):</strong> Used specifically for player quotes, official Valve statements, and community testimonies (rendered inside <code>&lt;blockquote&gt;</code> elements) to give them a dramatic and historical tone.
+                </li>
+            </ul>
+        </section>
+
+        <section id="wireframes">
+            <h2>Wireframes</h2>
+            <p>The following wireframes represent the proposed structural layout for the home page in both Mobile (Narrow) and Desktop (Wide) viewports:</p>
+
+            <div class="wireframe-grid">
+                <figure>
+                    <h3>Mobile View (Narrow Layout)</h3>
+                    <img src="images/mobile-wireframe.png" alt="Wireframe of the home page for a narrow mobile viewport" loading="lazy">
+                </figure>
+
+                <figure>
+                    <h3>Desktop View (Wide Layout)</h3>
+                    <img src="images/browser-wireframe.png" alt="Wireframe of the home page for a wide desktop viewport" loading="lazy">
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Site Plan | WDD231 Project</p>
+    </footer>
+
+</body>
+</html>

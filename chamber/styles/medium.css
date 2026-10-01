@@ -1,3 +1,28 @@
+@media (min-width: 641px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "item1 item1"
+      "item2 item3"
+      "item4 item5"
+      "item6 item7"
+      "item8 item8";
+  }
+
+  .gallery-card img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  .gallery-card:hover img {
+    filter: brightness(0.6) saturate(1.4);
+    transform: scale(1.06);
+  }
+}
+
+larger.css (completo, sin cambios):
+
+css
 @media (min-width: 768px) {
   header {
     padding: 0.75rem 2rem;

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="322 Archive: the origin of the term 322 in Dota 2 and the circumstances behind match-fixing in South America.">
+  <meta name="author" content="Alvaro Garcia">
+  <title>322 Archive: Origins and Context</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@1,600&family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/mando.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/cases.js" defer></script>
+  <script src="scripts/quotes.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadCases('cases-preview', 3);
+      loadQuotes('quotes-container');
+    });
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/mando.svg" alt="322 Archive logo" width="36" height="36">
+        <span class="site-title">322 Archive</span>
+      </div>
+      <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+      <nav>
+        <ul id="primary-nav">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="cases.html">Cases</a></li>
+          <li><a href="form.html">Report a Case</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>What is 322?</h1>
+      <p>"322" is the number the Dota 2 community uses to name match-fixing. This site documents where the term came from, and the circumstances that keep pushing South American players toward it.</p>
+      <img src="images/hero.webp" alt="Dota 2 esports stage" loading="lazy">
+    </section>
+
+    <div class="content-grid">
+      <div class="content-main">
+        <section>
+          <h2>The Origin</h2>
+          <div class="origin-content">
+            <img src="images/solo.webp" alt="Alexei Solo Berezin" loading="lazy" class="origin-image">
+            <p>In June 2013, Russian pro Alexei "Solo" Berezin bet $100 against his own team at 3.22 odds, winning exactly $322 if his team lost. The term "322" became Dota 2's shorthand for throwing a match, and later spread across esports as a whole.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>South American Context</h2>
+          <p>Low salaries, unstable contracts, and a lack of institutional support have made South American players especially vulnerable to match-fixing offers. Former Elite Wolves player Freddy "SmAsH" Sina has said that at his peak he earned around $90 a month, a quarter of the average Peruvian wage at the time, and still couldn't always cover basic meals. That kind of gap between a pro salary and daily costs is part of why third-party bettors keep targeting the region's younger, tier-3 talent.</p>
+        </section>
+
+        <section id="cases-section">
+          <h2>Cases</h2>
+          <div id="cases-preview" class="case-grid"></div>
+          <p><a href="cases.html">See all cases →</a></p>
+        </section>
+      </div>
+
+      <aside class="content-sidebar">
+        <section>
+          <h2>Local Impact</h2>
+          <ul class="impact-stats">
+            <li><strong>4</strong> documented match-fixing cases since 2013</li>
+            <li><strong>13 years</strong> between the first incident and the most recent one</li>
+            <li><strong>3</strong> cases directly tied to South American teams or players</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Community Quotes</h2>
+          <div id="quotes-container"></div>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p><strong>322 Archive</strong></p>
+    <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="images/facebook.svg" alt="Facebook icon" width="26" height="26">
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn icon" width="26" height="26">
+      </a>
+      <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub icon" width="26" height="26">
+      </a>
+    </div>
+
+    <p>Alvaro Garcia | alvaro732255@gmail.com</p>
+    <p><a href="#">Watch the project demo video</a></p>
+    <p><a href="attributions.html">Attributions</a></p>
+    <p>&copy; <span id="currentyear"></span> | WDD231 Project</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>

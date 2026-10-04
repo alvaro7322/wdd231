@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Alexei \"Solo\" Berezin",
+    "year": 2013,
+    "team": "RoX.Kis",
+    "sanction": "One-year ban by StarLadder (match-fixing predates Valve lifetime bans)",
+    "context": "Bet $100 against his own team at 3.22 odds, winning exactly $322 and giving the term its name.",
+    "image": "images/solo.webp"
+  },
+  {
+    "name": "Elite Wolves",
+    "year": 2016,
+    "team": "Elite Wolves (Peru)",
+    "sanction": "Lifetime ban by Valve on March 23, 2016",
+    "context": "One of the first high-profile South American bans, which later pushed the team to seek support from Peru's Congress.",
+    "image": "images/elite-wolves.webp"
+  },
+  {
+    "name": "Vintage & DarkMago",
+    "year": 2026,
+    "team": "PlayTime (South America)",
+    "sanction": "Lifetime ban (Vintage) and 5-year ban (DarkMago) by ESIC",
+    "context": "Confirmed attempted match-fixing at the Esports World Cup 2026, exposing ongoing integrity gaps in the region.",
+    "image": "images/playtime.webp"
+  },
+  {
+    "name": "Santiago \"TaiLung\" Agüero",
+    "year": 2026,
+    "team": "LGD Gaming",
+    "sanction": "Banned from The International 2026 and all future PGL events",
+    "context": "Team Liquid had reportedly planned to sign him before the ban, according to coach William \"Blitz\" Lee.",
+    "image": "images/tailung.webp"
+  }
+]

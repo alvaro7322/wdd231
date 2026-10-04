@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Full catalog of South American and international Dota 2 match-fixing cases.">
+  <meta name="author" content="Alvaro Garcia">
+  <title>Cases - 322 Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@1,600&family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/mando.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/cases.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadCases('cases-full');
+    });
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/mando.svg" alt="322 Archive logo" width="36" height="36">
+        <span class="site-title">322 Archive</span>
+      </div>
+      <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+      <nav>
+        <ul id="primary-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cases.html" class="active">Cases</a></li>
+          <li><a href="form.html">Report a Case</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1>All Cases</h1>
+      <p>Every documented match-fixing case covered by this archive, from the original 2013 incident to the most recent South American bans.</p>
+      <div id="filter-bar" class="filter-bar"></div>
+      <div id="cases-full" class="case-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>322 Archive</strong></p>
+    <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="images/facebook.svg" alt="Facebook icon" width="26" height="26">
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn icon" width="26" height="26">
+      </a>
+      <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub icon" width="26" height="26">
+      </a>
+    </div>
+
+    <p>Alvaro Garcia | alvaro732255@gmail.com</p>
+    <p><a href="#">Watch the project demo video</a></p>
+    <p>&copy; <span id="currentyear"></span> | WDD231 Project</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>

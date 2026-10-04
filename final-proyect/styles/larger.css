@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  .header-container {
+    flex-wrap: nowrap;
+  }
+
+  nav {
+    width: auto;
+  }
+
+  nav ul {
+    display: flex !important;
+    flex-direction: row;
+    margin: 0;
+    gap: 0.5rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 1.5rem 2rem;
+  }
+
+  .case-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .origin-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .origin-image {
+    flex-shrink: 0;
+  }
+
+  .content-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}

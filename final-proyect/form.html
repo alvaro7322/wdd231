@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Report a suspected match-fixing case to the 322 Archive.">
+  <meta name="author" content="Alvaro Garcia">
+  <title>Report a Case - 322 Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:ital,wght@1,600&family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/mando.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-title">
+        <img src="images/mando.svg" alt="322 Archive logo" width="36" height="36">
+        <span class="site-title">322 Archive</span>
+      </div>
+      <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+      <nav>
+        <ul id="primary-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cases.html">Cases</a></li>
+          <li><a href="form.html" class="active">Report a Case</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1>Report a Suspected Case</h1>
+      <p>Seen something that looks like match-fixing? Fill out the form below. You can report anonymously if you prefer.</p>
+
+      <form id="report-form">
+        <div class="form-group">
+          <label for="match-id">Match ID</label>
+          <input type="number" id="match-id" name="match-id" placeholder="e.g. 7890123456" required>
+        </div>
+
+        <div class="form-group">
+          <label for="suspect">Suspected Team or Player</label>
+          <input type="text" id="suspect" name="suspect" placeholder="e.g. PlayTime" required>
+        </div>
+
+        <div class="form-group">
+          <label for="minute">Minute of the Suspicious Play</label>
+          <input type="number" id="minute" name="minute" min="0" placeholder="e.g. 24">
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" placeholder="Describe what you saw and why it looked suspicious" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="reporter">Your Name or Alias (optional)</label>
+          <input type="text" id="reporter" name="reporter" placeholder="Leave blank to report anonymously">
+        </div>
+
+        <button type="submit">Send Case</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>322 Archive</strong></p>
+    <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="images/facebook.svg" alt="Facebook icon" width="26" height="26">
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="LinkedIn icon" width="26" height="26">
+      </a>
+      <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="images/github.svg" alt="GitHub icon" width="26" height="26">
+      </a>
+    </div>
+
+    <p>Alvaro Garcia | alvaro732255@gmail.com</p>
+    <p><a href="#">Watch the project demo video</a></p>
+    <p>&copy; <span id="currentyear"></span> | WDD231 Project</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>

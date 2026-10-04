@@ -42,4 +42,18 @@
   .content-grid {
     grid-template-columns: 2fr 1fr;
   }
+
+  .hero {
+    min-height: 440px;
+  }
+
+  .hero-digits {
+    font-size: 12rem;
+    right: 2.5rem;
+  }
+
+  .hero-text {
+    max-width: 40ch;
+    padding: 3rem;
+  }
 }
